@@ -1,0 +1,42 @@
+body {
+    background-color: aliceblue;
+}
+
+input {
+  background-color: lightyellow;  
+  font-size: 18px;                
+  width: 300px;                   
+  padding: 10px;                  
+  border: 2px solid gray;         
+  border-radius: 5px;             
+}
+
+select {
+    background-color: lightyellow;  
+  font-size: 18px;                
+  width: 323px;                   
+  padding: 10px;                  
+  border: 2px solid gray;         
+  border-radius: 5px;  
+}
+
+table {
+  width: 100%;
+  margin-top: 30px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: lightgray;
+}
+
+tbody tr:hover {
+  background-color: lightyellow; 
+}
+
+

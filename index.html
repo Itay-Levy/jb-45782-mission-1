@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+    
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Add Product</h1>
+    <form id="product-form" onsubmit="addProduct(event)">
+        <label class="form-label" for="product-name">product Name</label>
+        <br>
+        <input class="form-control" id="product-name" required>
+        <br><br>
+
+        <label class="form-label" for="product-price">product-price</label>
+        <br>
+        <input class="form-control" type="number" id="product-price" required>
+        <br><br>
+
+        <label for="product-category">category</label>
+        <br>
+            <select id="product-category" class="form-select" required>
+
+                <option selected disabled>please select product category...</option>
+                <option value="Drinks">Drinks</option>
+                <option value="Meat">Meat</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Basic">Basic</option>
+            </select>
+
+            <br><br>
+            <label class="form-label" for="product-pic">Photo URL</label>
+            <br>
+        <input class="form-control" type="url" id="product-pic" required>
+            <br><br>
+
+            <button>Add Product</button>
+
+        </form>
+
+        <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>product category</th>
+                <th>Pic</th>
+            </tr>
+        </thead>
+        <tbody id="product-list">
+        </tbody>
+    </table>
+    
+
+    
+</body>
+</html>
